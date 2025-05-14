@@ -63,7 +63,7 @@ export default abstract class WSConnection {
     return new Promise((resolve, reject) => {
       let messageToSend: string;
       let messageProcessed = false;
-      let requestTimeout: NodeJS.Timer;
+      let requestTimeout: NodeJS.Timeout;
       // Function that will receive the request's response
       const responseCallback = (payload?: Record<string, unknown> | string): void => {
         if (!messageProcessed) {
@@ -174,10 +174,12 @@ export default abstract class WSConnection {
             result = await this.handleRequest(command, commandPayload);
           } catch (error) {
             // Send Error Response
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
             await this.sendError(messageID, error);
             throw error;
           }
           // Send Response
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           await this.sendResponse(messageID, command, result);
           break;
         // Response to an OCPP Request
