@@ -33,8 +33,8 @@ export enum PerformanceRecordGroup {
   LACROIX = 'lacroix',
   EV_DATABASE = 'ev-database',
   WIT = 'wit',
-  SAP_SMART_CHARGING = 'sap-smart-charging',
-  SAP_CONCUR = 'sap-concur',
+  LEASY_SMART_CHARGING = 'leasy-smart-charging',
+  LEASY_CLOUD = 'leasy-cloud',
   NOTIFICATION = 'notification',
   UNKNOWN = 'unknown',
 }

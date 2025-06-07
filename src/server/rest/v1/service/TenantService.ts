@@ -113,7 +113,7 @@ export default class TenantService {
       logoContent = tenantLogo?.logo;
     }
     if (!logoContent) {
-      // A default Open e-Mobility logo - base64 encoded
+      // A default Leasy Cloud logo - base64 encoded
       logoContent = BrandingConstants.TENANT_DEFAULT_LOGO_CONTENT;
     }
     // Header

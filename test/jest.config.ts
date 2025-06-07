@@ -111,7 +111,7 @@ const config: Config.InitialOptions = {
       {
         'resultDir': 'test/results',
         'reportTitle': 'Unit Tests Report',
-        'reportHeadline': 'ev-server',
+        'reportHeadline': 'LC-Server',
         'jestStareConfigJson': 'jest-stare.json',
         'jestGlobalConfigJson': 'globalStuff.json',
         'log': true

@@ -183,13 +183,13 @@ export interface SacAnalyticsSetting {
 }
 
 export enum SmartChargingSettingsType {
-  SAP_SMART_CHARGING = 'sapSmartCharging'
+  LEASY_SMART_CHARGING = 'leasySmartCharging'
 }
 
 export interface SmartChargingSettings extends Setting {
   identifier: TenantComponents.SMART_CHARGING;
   type: SmartChargingSettingsType;
-  sapSmartCharging?: SapSmartChargingSetting;
+  leasySmartCharging?: SapSmartChargingSetting;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -197,7 +197,7 @@ export interface SmartChargingSetting {
 }
 
 export enum SmartChargingContentType {
-  SAP_SMART_CHARGING = 'sapSmartCharging',
+  LEASY_SMART_CHARGING = 'leasySmartCharging',
 }
 
 export interface SapSmartChargingSetting extends SmartChargingSetting {

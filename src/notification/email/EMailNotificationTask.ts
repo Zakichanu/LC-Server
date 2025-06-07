@@ -394,7 +394,7 @@ export default class EMailNotificationTask implements NotificationTask {
     sourceData.openEmobilityWebSiteURL = BrandingConstants.OPEN_EMOBILITY_WEBSITE_URL;
     // Tenant information
     if (tenant.id === Constants.DEFAULT_TENANT_ID) {
-      sourceData.tenantName = 'Open e-Mobility'; // TBC - Not sure what to show in emails in that case
+      sourceData.tenantName = 'Leasy Cloud'; // TBC - Not sure what to show in emails in that case
     } else {
       sourceData.tenantName = tenant.name;
     }

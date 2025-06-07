@@ -1,5 +1,5 @@
 {
-  "name": "ev-server",
+  "name": "LC-Server",
   "version": "2.7.9",
   "engines": {
     "node": "16.x.x",
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sap-labs-france/ev-server.git"
+    "url": "https://github.com/Zakichanu/LC-Server.git"
   },
   "license": "Apache-2.0",
   "licenses": [
@@ -17,8 +17,8 @@
     }
   ],
   "description": "Backend for Electric Vehicle charging station",
-  "author": "Open E-Mobility <open-e-mobility@sap.com>",
-  "homepage": "https://github.com/sap-labs-france/ev-server",
+  "author": "",
+  "homepage": "https://github.com/Zakichanu/LC-Server",
   "main": "dist/start.js",
   "scripts": {
     "git:sinit": "git submodule update --init --recursive --force",

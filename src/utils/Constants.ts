@@ -311,7 +311,7 @@ export default class Constants {
 
   public static readonly REGEX_VALIDATION_LATITUDE = /^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)$/;
   public static readonly REGEX_VALIDATION_LONGITUDE = /^[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$/;
-  public static readonly REGEX_URL_PATTERN = /^(?:https?|wss?):\/\/((?:[\w-]+)(?:\.[\w-]+)*)(?:[\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?$/;
+  public static readonly REGEX_URL_PATTERN = /^(?:https?|wss?):\/\/((?:[\w-]+)(?:\.[\w-]+)*)(?:[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])?$/;
   public static readonly MAX_GPS_DISTANCE_METERS = 40000000; // Earth
 
   public static readonly CSV_CHARACTERS_TO_ESCAPE = /^[+\-@=].*$/;
@@ -470,7 +470,7 @@ export default class Constants {
   public static readonly AFIREV_MINIMAL_CONSUMPTION_THRESHOLD = 500; // Minimal consumption - 0.5 kW.h
 
   /* App Info for STRIPE */
-  public static readonly STRIPE_APP_NAME = 'Open e-Mobility';
+  public static readonly STRIPE_APP_NAME = 'Leasy Cloud';
   public static readonly STRIPE_PARTNER_ID = 'TECH-000685';
   // public static readonly STRIPE_API_VERSION = '2020-08-27';
   public static readonly STRIPE_API_VERSION = '2022-11-15';

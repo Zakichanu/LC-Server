@@ -271,8 +271,8 @@ export default class SettingStorage {
       smartChargingSettings.backupSensitiveData = settings.result[0].backupSensitiveData;
       // SAP Smart Charging
       if (config.sapSmartCharging) {
-        smartChargingSettings.type = SmartChargingSettingsType.SAP_SMART_CHARGING;
-        smartChargingSettings.sapSmartCharging = {
+        smartChargingSettings.type = SmartChargingSettingsType.LEASY_SMART_CHARGING;
+        smartChargingSettings.leasySmartCharging = {
           optimizerUrl: config.sapSmartCharging.optimizerUrl ? config.sapSmartCharging.optimizerUrl : '',
           user: config.sapSmartCharging.user ? config.sapSmartCharging.user : '',
           password: config.sapSmartCharging.password ? config.sapSmartCharging.password : '',

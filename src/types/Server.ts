@@ -2,7 +2,7 @@
 export enum ServerAction {
   UNKNOWN_ACTION = 'Unknown',
 
-  SAP_CONCUR_REQUEST = 'SapConcurRequest',
+  LEASY_CLOUD_REQUEST = 'LeasyCloudRequest',
   RECAPTCHA_REQUEST = 'RecaptchaRequest',
   GREENCOM_REQUEST = 'GreencomRequest',
   STRIPE_REQUEST = 'StripeRequest',
@@ -10,7 +10,7 @@ export enum ServerAction {
   LACROIX_REQUEST = 'LacroixRequest',
   EV_DATABASE_REQUEST = 'EVDatabaseRequest',
   WIT_REQUEST = 'WitRequest',
-  SAP_SMART_CHARGING_REQUEST = 'SapSmartChargingRequest',
+  LEASY_SMART_CHARGING_REQUEST = 'LeasySmartChargingRequest',
 
   DEPRECATED_REST_ENDPOINT = 'DeprecatedRestEndpoint',
   LOGIN = 'Login',

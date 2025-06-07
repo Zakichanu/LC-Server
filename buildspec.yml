@@ -34,7 +34,7 @@ artifacts:
     - package.json
     - package-lock.json
     - appspec.yml
-    - src/aws/ev-server.service
+    - src/aws/LC-Server.service
     - 'src/aws/*.sh'
     - 'dist/**/*'
     - 'node_modules/**/*'

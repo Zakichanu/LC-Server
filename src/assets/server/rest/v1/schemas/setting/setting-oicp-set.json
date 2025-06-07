@@ -1,6 +1,6 @@
 {
   "$id": "setting-sac-set",
-  "title": "Set SAP Analytics Settings",
+  "title": "Set Leasy Cloud Settings",
   "type": "object",
   "properties": {
     "content": {

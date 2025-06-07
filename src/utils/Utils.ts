@@ -1277,7 +1277,7 @@ export default class Utils {
       // SAC
       case TenantComponents.ANALYTICS:
         if (!currentSettingContent || currentSettingContent.type !== activeComponentContent.type) {
-          // Only SAP Analytics
+          // Only Leasy Cloud Analytics
           return {
             'type': AnalyticsSettingsType.SAC,
             'sac': {}
@@ -1287,10 +1287,10 @@ export default class Utils {
       // Smart Charging
       case TenantComponents.SMART_CHARGING:
         if (!currentSettingContent || currentSettingContent.type !== activeComponentContent.type) {
-          // Only SAP sapSmartCharging
+          // Only Leasy Smart Charging
           return {
-            'type': SmartChargingContentType.SAP_SMART_CHARGING,
-            'sapSmartCharging': {}
+            'type': SmartChargingContentType.LEASY_SMART_CHARGING,
+            'leasySmartCharging': {}
           } as SettingDBContent;
         }
         break;
@@ -1407,7 +1407,7 @@ export default class Utils {
     }
     // Concur
     if (url.includes('concursolutions')) {
-      return PerformanceRecordGroup.SAP_CONCUR;
+      return PerformanceRecordGroup.LEASY_CLOUD;
     }
     // Recaptcha
     if (url.includes('recaptcha')) {
@@ -1439,7 +1439,11 @@ export default class Utils {
     }
     // SAP Smart Charging
     if (url.includes('smart-charging')) {
-      return PerformanceRecordGroup.SAP_SMART_CHARGING;
+      return PerformanceRecordGroup.LEASY_SMART_CHARGING;
+    }
+    // Leasy Smart Charging
+    if (url.includes('leasy-smart-charging')) {
+      return PerformanceRecordGroup.LEASY_SMART_CHARGING;
     }
     return PerformanceRecordGroup.UNKNOWN;
   }
@@ -1463,7 +1467,7 @@ export default class Utils {
     }
     // Concur
     if (url.includes('concursolutions')) {
-      return ServerAction.SAP_CONCUR_REQUEST;
+      return ServerAction.LEASY_CLOUD_REQUEST;
     }
     // Recaptcha
     if (url.includes('recaptcha')) {
@@ -1495,7 +1499,11 @@ export default class Utils {
     }
     // SAP Smart Charging
     if (url.includes('smart-charging')) {
-      return ServerAction.SAP_SMART_CHARGING_REQUEST;
+      return ServerAction.LEASY_SMART_CHARGING_REQUEST;
+    }
+    // Leasy Smart Charging
+    if (url.includes('leasy-smart-charging')) {
+      return ServerAction.LEASY_SMART_CHARGING_REQUEST;
     }
     return ServerAction.HTTP_REQUEST;
   }
