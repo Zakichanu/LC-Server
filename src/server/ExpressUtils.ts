@@ -23,11 +23,7 @@ export default class ExpressUtils {
     // Secure the application
     app.use(helmet());
     // Cross origin headers
-    app.use(cors({
-      origin: '*', // Allow requests from any origin
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-      allowedHeaders: ['Content-Type', 'Authorization']
-    }));
+    app.use(cors());
     // Body parser
     app.use(bodyParser.json({
       limit: bodyLimit
