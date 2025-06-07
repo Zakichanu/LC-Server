@@ -39,7 +39,7 @@ export default class SmartChargingHelper {
     }
     const smartChargingSettings = await SettingStorage.getSmartChargingSettings(tenant);
     // Build the smart charging session parameters
-    if (smartChargingSettings.sapSmartCharging?.prioritizationParametersActive) {
+    if (smartChargingSettings.leasySmartCharging?.prioritizationParametersActive) {
       // Default values
       const parameters = chargingStation.siteArea?.smartChargingSessionParameters;
       const targetStateOfCharge = parameters?.targetStateOfCharge ?? 70;

@@ -510,7 +510,7 @@ export default class SiteAreaService {
     siteAreas.smartChargingSessionParametersActive = false;
     if (Utils.isComponentActiveFromToken(user, TenantComponents.SMART_CHARGING)) {
       const smartChargingSettings = await SettingStorage.getSmartChargingSettings(tenant);
-      if (smartChargingSettings.sapSmartCharging.prioritizationParametersActive) {
+      if (smartChargingSettings.leasySmartCharging.prioritizationParametersActive) {
         siteAreas.smartChargingSessionParametersActive = true;
       }
     }

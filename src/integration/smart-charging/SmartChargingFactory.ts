@@ -16,8 +16,8 @@ export default class SmartChargingFactory {
         let smartChargingIntegrationImpl = null;
         switch (smartChargingSetting.type) {
           // SAP Smart Charging
-          case SmartChargingSettingsType.SAP_SMART_CHARGING:
-            smartChargingIntegrationImpl = new SapSmartChargingIntegration(tenant, smartChargingSetting.sapSmartCharging);
+          case SmartChargingSettingsType.LEASY_SMART_CHARGING:
+            smartChargingIntegrationImpl = new SapSmartChargingIntegration(tenant, smartChargingSetting.leasySmartCharging);
             break;
         }
         return smartChargingIntegrationImpl;
