@@ -1081,7 +1081,7 @@ export default class UtilsService {
   }
 
   public static getTransactionInErrorTypes(user: UserToken): TransactionInErrorType[] {
-    // For only charging station in e-Mobility (not the ones from the roaming)
+    // For only charging station in LeasyCloud (not the ones from the roaming)
     const allTypes = [
       TransactionInErrorType.LONG_INACTIVITY,
       TransactionInErrorType.NEGATIVE_ACTIVITY,

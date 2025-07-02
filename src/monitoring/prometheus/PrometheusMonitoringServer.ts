@@ -32,7 +32,7 @@ export default class PrometheusMonitoringServer extends MonitoringServer {
     client.collectDefaultMetrics({ register: this.clientRegistry });
     // Add a default label which is added to all metrics
     this.clientRegistry.setDefaultLabels({
-      app: 'e-Mobility'
+      app: 'LeasyCloud'
     });
     if (process.env.K8S) {
       this.createGaugeMetric(Constants.WEB_SOCKET_QUEUED_REQUEST, 'The number of web sockets that are queued');

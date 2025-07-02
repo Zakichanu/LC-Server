@@ -449,7 +449,7 @@
       "title": "User Account Inactivity",
       "buttonText": "Navigate to {{tenantName}}",
       "text": [
-        "You haven't logged in to the e-Mobility application since {{lastLogin}}.",
+        "You haven't logged in to the LeasyCloud application since {{lastLogin}}.",
         "Be aware that in order to comply with the general data protection regulation, your account might be deleted by an administrator.",
         "",
         "Please log in and accept the latest end-user license agreement to prevent your account deletion."

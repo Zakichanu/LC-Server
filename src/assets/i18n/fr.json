@@ -449,7 +449,7 @@
       "title": "Compte utilisateur inactif",
       "buttonText": "Naviguer vers {{tenantName}}",
       "text": [
-        "Vous ne vous êtes pas authentifié sur l'application e-Mobility depuis le {{lastLogin}}.",
+        "Vous ne vous êtes pas authentifié sur l'application LeasyCloud depuis le {{lastLogin}}.",
         "Veuillez noter que pour des raisons légales de protection des données, votre compte est susceptible d'être supprimé par un administrateur.",
         "",
         "Authentifiez-vous et acceptez les dernières conditions d'utilisation afin d'éviter la suppression de votre compte."

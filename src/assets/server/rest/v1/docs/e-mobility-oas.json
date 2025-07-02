@@ -7,7 +7,7 @@
     }
   ],
   "info": {
-    "title": "e-Mobility REST API",
+    "title": "LeasyCloud REST API",
     "description": "Charging Station Management Software",
     "version": "1.0.0",
     "contact": {
@@ -1368,7 +1368,7 @@
                   "properties": {
                     "text": {
                       "type": "string",
-                      "example": "<h3>End-user Agreement Usage of the e-Mobility Software</h3>..."
+                      "example": "<h3>End-user Agreement Usage of the LeasyCloud Software</h3>..."
                     }
                   }
                 }

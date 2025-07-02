@@ -63,7 +63,7 @@ export default class Bootstrap {
   public static async start(): Promise<void> {
     let serverStarted: ServerType[] = [];
     let startTimeMillis: number;
-    const startTimeGlobalMillis = await this.logAndGetStartTimeMillis('e-Mobility Server is starting...');
+    const startTimeGlobalMillis = await this.logAndGetStartTimeMillis('LeasyCloud Server is starting...');
 
     try {
       // Setup i18n

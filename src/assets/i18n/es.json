@@ -449,7 +449,7 @@
       "title": "Inactividad de su cuenta",
       "buttonText": "Dirigirse a {{tenantName}}",
       "text": [
-        "No ha ingresado en la aplicación e-Mobility desde {{lastLogin}}.",
+        "No ha ingresado en la aplicación LeasyCloud desde {{lastLogin}}.",
         "Para cumplir con las leyes europeas sobre protección general de datos, un administrador puede desactivar su cuenta y posiblemente eliminarla.",
         "",
         "Ingrese y acepte los acuerdos de licencia de usuario final para prevenir la eliminación de su cuenta."

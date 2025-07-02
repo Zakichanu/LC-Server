@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "6d9bb3dd-a36a-47f9-82d6-c3cc15b365c7",
-		"name": "e-Mobility REST API",
+		"name": "LeasyCloud REST API",
 		"description": "Charging Station Management Software\n\nContact Support:\n Name: Serge FABIANO",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "8922584"
@@ -66467,7 +66467,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"text\": \"<h3>End-user Agreement Usage of the e-Mobility Software</h3>...\"\n}"
+									"body": "{\n  \"text\": \"<h3>End-user Agreement Usage of the LeasyCloud Software</h3>...\"\n}"
 								},
 								{
 									"name": "Unknown tenant",

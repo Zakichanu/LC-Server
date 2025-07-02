@@ -587,7 +587,7 @@ export default class RemotePushNotificationTask implements NotificationTask {
         sound: 'default',
         badge: '0',
         color: severity ? severity : NotificationSeverity.INFO,
-        android_channel_id: 'e-Mobility'
+        android_channel_id: 'LeasyCloud'
       },
       data: {
         tenantID: tenant.id,

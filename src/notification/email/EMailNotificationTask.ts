@@ -334,7 +334,7 @@ export default class EMailNotificationTask implements NotificationTask {
     const title = i18nInstance.translate(`email.${prefix}.title`, context);
     const emailContent: EmailNotificationMessage = {
       to: recipient.email,
-      subject: `e-Mobility - ${tenant.name} - ${title}`,
+      subject: `LeasyCloud - ${tenant.name} - ${title}`,
       html: html
     };
     // Send the email

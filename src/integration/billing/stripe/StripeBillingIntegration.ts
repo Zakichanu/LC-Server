@@ -317,7 +317,7 @@ export default class StripeBillingIntegration extends BillingIntegration {
     const userID = metadata?.userID;
     if (!userID) {
       throw new BackendError({
-        message: `Unexpected situation - invoice is not an e-Mobility invoice - ${stripeInvoiceID}`,
+        message: `Unexpected situation - invoice is not an LeasyCloud invoice - ${stripeInvoiceID}`,
         module: MODULE_NAME, action: ServerAction.BILLING,
         method: 'synchronizeAsBillingInvoice',
       });

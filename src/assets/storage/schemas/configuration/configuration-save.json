@@ -1,6 +1,6 @@
 {
   "$id": "configuration-save",
-  "title": "e-Mobility Configuration",
+  "title": "LeasyCloud Configuration",
   "type": "object",
   "properties": {
     "Migration": {
