@@ -400,7 +400,7 @@ export default class EMailNotificationTask implements NotificationTask {
     }
     // Tenant logo URL
     sourceData.tenantLogoURL = Utils.buildRestServerTenantEmailLogoURL(tenant.id);
-    if (this.emailConfig.troubleshootingMode && sourceData.tenantLogoURL.startsWith('http://localhost')) {
+    if (sourceData.tenantLogoURL.startsWith('http://localhost')) {
       // Dev and test only - for security reasons te browser blocks content from localhost in emails!
       sourceData.tenantLogoURL = BrandingConstants.OPEN_EMOBILITY_WEBSITE_LOGO_URL;
     }
