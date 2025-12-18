@@ -1,8 +1,9 @@
 import OCPIEndpoint, { OCPIEndpointVersions, OCPIPingResult, OCPIRegisterResult, OCPIUnregisterResult, OCPIVersion } from '../../types/ocpi/OCPIEndpoint';
 import { ReasonPhrases, StatusCodes } from 'http-status-codes';
 
+
+import { AxiosRequestConfig, AxiosInstance } from 'axios';
 import AxiosFactory from '../../utils/AxiosFactory';
-import { AxiosInstance } from 'axios';
 import BackendError from '../../exception/BackendError';
 import Configuration from '../../utils/Configuration';
 import { HTTPError } from '../../types/HTTPError';
@@ -15,6 +16,8 @@ import OCPIUtils from '../../server/ocpi/OCPIUtils';
 import { OcpiSetting } from '../../types/Setting';
 import { ServerAction } from '../../types/Server';
 import Tenant from '../../types/Tenant';
+import * as fs from 'fs';
+import * as https from 'https';
 
 const MODULE_NAME = 'OCPIClient';
 
@@ -32,7 +35,17 @@ export default abstract class OCPIClient {
         module: MODULE_NAME, method: 'constructor',
       });
     }
-    this.axiosInstance = AxiosFactory.getAxiosInstance(tenant);
+
+    const httpsAgent = new https.Agent({
+      cert: fs.readFileSync('/home/technical/partner_key/FR_LSB.gireve.com.crt'),
+      key: fs.readFileSync('/home/technical/partner_key/FR_LSB.gireve.com.key'),
+      rejectUnauthorized: true,
+    });
+    const axiosConfig : AxiosRequestConfig = {
+      httpsAgent: httpsAgent,
+      timeout: Configuration.getAxiosConfig()?.timeoutSecs * 1000
+    };
+    this.axiosInstance = AxiosFactory.getAxiosInstance(tenant, { axiosConfig });
     this.tenant = tenant;
     this.settings = settings;
     this.ocpiEndpoint = ocpiEndpoint;
